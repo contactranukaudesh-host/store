@@ -13,6 +13,8 @@
 <meta property="og:image:alt" content="Four RanukaUdesh tees in different colours">
 <meta name="twitter:image" content="https://ranukaudesh.store/link-preview.jpg">
 <link rel="canonical" href="https://ranukaudesh.store/">
+<link rel="icon" href="/Icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/Icon.png">
 <meta property="og:title" content="RanukaUdesh – Official tees">
 <meta property="og:description" content="Official tees from @RanukaTheCreator. Pay cash on delivery or by bank transfer.">
 <meta name="twitter:card" content="summary_large_image">
@@ -109,6 +111,15 @@ footer.site small{display:block;margin-top:2.2rem;opacity:.7}
 .bar.hide{transform:translateY(140%);visibility:hidden}
 @media(max-width:560px){.bar{display:flex}footer.site{padding-bottom:calc(5.5rem + env(safe-area-inset-bottom,0px))}}
 @media(prefers-reduced-motion:reduce){.bar{transition:none}}
+
+:root{--wfs:clamp(2.7rem,14.2vw,13.5rem)}
+.word{font-size:var(--wfs)}
+.tone{margin-bottom:calc(var(--wfs)*.33 + 1.2rem)}
+.swatches{left:9px;top:calc(50% - 14px)}
+.badge text{font-size:15px;letter-spacing:.05em}
+.btn{display:inline-flex;align-items:center;justify-content:center}
+@media (max-width:560px){.badge{top:4.3rem;width:70px}.shirt{height:min(46vh,66vw)}.cta .btn{flex:1 1 auto;min-height:3.2rem}}
+@media (max-width:560px) and (max-height:720px){.badge{display:none}}
 </style>
 </head>
 <body>
@@ -119,19 +130,20 @@ footer.site small{display:block;margin-top:2.2rem;opacity:.7}
     <nav><a href="#shop">Shop</a><button class="cart" id="cart" type="button">Cart<b id="count">0</b></button></nav>
   </header>
 
-  <div class="swatches" id="sws" role="group" aria-label="Choose a colour"></div>
+
 
   <svg class="badge" viewBox="0 0 120 120" aria-hidden="true">
     <defs><path id="ring" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs>
-    <text><textPath href="#ring">official merch  *  cash on delivery  *  </textPath></text>
+    <text><textPath href="#ring">official merch * cash on delivery * </textPath></text>
     <text x="60" y="66" text-anchor="middle" style="font-size:18px;letter-spacing:0">LK</text>
   </svg>
 
   <div class="stage">
+    <div class="swatches" id="sws" role="group" aria-label="Choose a colour"></div>
     <div class="shirt" id="shirt">
       <svg viewBox="0 0 400 420" role="img" aria-label="T-shirt with a play button print">
         <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".2"/><stop offset=".35" stop-color="#fff" stop-opacity=".14"/><stop offset=".7" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".24"/></linearGradient></defs>
-        <path class="body" id="tee" d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/>
+        <path class="body" d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/>
         <path fill="url(#g)" d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/>
         <path d="M130 24 96 126M270 24l34 102" stroke="#000" stroke-opacity=".18" stroke-width="2" fill="none"/>
         <path d="M130 24q70 52 140 0" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="9" stroke-linecap="round"/>
@@ -149,7 +161,7 @@ footer.site small{display:block;margin-top:2.2rem;opacity:.7}
     <div class="cta"><a class="btn main" href="#shop">Buy now</a><button class="btn" id="add" type="button">Add to cart</button></div>
   </div>
 </main>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="tee" viewBox="0 0 400 420"><path d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/><path fill="url(#g)" d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/><path d="M130 24 96 126M270 24l34 102" stroke="#000" stroke-opacity=".18" stroke-width="2" fill="none"/><path d="M130 24q70 52 140 0" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="9" stroke-linecap="round"/></symbol></defs></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="tee-sym" viewBox="0 0 400 420"><path d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/><path fill="url(#g)" d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/><path d="M130 24 96 126M270 24l34 102" stroke="#000" stroke-opacity=".18" stroke-width="2" fill="none"/><path d="M130 24q70 52 140 0" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="9" stroke-linecap="round"/></symbol></defs></svg>
 <section class="gal" id="shop" aria-labelledby="gt">
   <h2 id="gt">Available designs</h2>
   <p class="sub">Six tees from the channel. Add the ones you want to your cart.</p>
@@ -263,7 +275,7 @@ const D=[
 ];
 const tilt=[-4,3,-2,4,-3,2];
 const grid=document.getElementById('grid');
-grid.innerHTML=D.map((x,i)=>`<article class="item"><div class="tile" style="--t:${x.t}">${x.left!=null?`<span class="left">${x.left>0?x.left+' left':'Sold out'}</span>`:''}<svg viewBox="0 0 400 420" style="--s:${x.s};--p:${x.p};--r:${tilt[i]}deg" role="img" aria-label="${x.n} design on a tee"><use href="#tee" style="fill:var(--s)"/><g transform="translate(200 205)" style="fill:var(--p)">${x.g}</g></svg></div><div class="cap"><div><h3>${x.n}</h3><p>${x.d}</p></div><button class="add" type="button" aria-label="Add ${x.n} to cart" ${x.left===0?'disabled':''}>Add to cart</button></div></article>`).join('');
+grid.innerHTML=D.map((x,i)=>`<article class="item"><div class="tile" style="--t:${x.t}">${x.left!=null?`<span class="left">${x.left>0?x.left+' left':'Sold out'}</span>`:''}<svg viewBox="0 0 400 420" style="--s:${x.s};--p:${x.p};--r:${tilt[i]}deg" role="img" aria-label="${x.n} design on a tee"><use href="#tee-sym" style="fill:var(--s)"/><g transform="translate(200 205)" style="fill:var(--p)">${x.g}</g></svg></div><div class="cap"><div><h3>${x.n}</h3><p>${x.d}</p></div><button class="add" type="button" aria-label="Add ${x.n} to cart" ${x.left===0?'disabled':''}>Add to cart</button></div></article>`).join('');
 grid.addEventListener('click',e=>{
   const b=e.target.closest('.add');if(!b)return;
   addToCart();b.textContent='Added';setTimeout(()=>b.textContent='Add to cart',1200);
