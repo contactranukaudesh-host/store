@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RanukaUdesh – Official tees</title>
+<meta name="description" content="Official tees from @RanukaTheCreator. Pick a design, pay cash on delivery or by bank transfer.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ranukaudesh.store/">
+<meta property="og:image" content="https://ranukaudesh.store/link-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Four RanukaUdesh tees in different colours">
+<meta name="twitter:image" content="https://ranukaudesh.store/link-preview.jpg">
+<link rel="canonical" href="https://ranukaudesh.store/">
+<meta property="og:title" content="RanukaUdesh – Official tees">
+<meta property="og:description" content="Official tees from @RanukaTheCreator. Pay cash on delivery or by bank transfer.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C9D4FF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#C9D4FF;--fg:#10153F;--shirt:#1E34B8;--ink:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+body{font-family:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--fg);overflow-x:hidden;transition:color .5s}
+a,button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--fg);outline-offset:3px}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;isolation:isolate;overflow:hidden;padding:1.1rem clamp(1rem,4vw,3rem) 1.6rem}
+.flood{position:absolute;inset:0;z-index:-1;pointer-events:none;display:none}
+.nav{display:flex;justify-content:space-between;align-items:center;font-weight:600}
+.mark{font-weight:800;font-size:1.5rem;text-decoration:none;letter-spacing:-.04em}
+.nav nav{display:flex;gap:1.4rem;align-items:center}
+.nav a{text-decoration:none}
+.cart{background:none;border:2px solid currentColor;border-radius:99px;padding:.35rem .9rem;cursor:pointer;font-weight:700}
+.cart b{display:inline-block;min-width:1ch;margin-left:.3rem}
+.bump{animation:bump .4s}
+@keyframes bump{40%{transform:scale(1.25) rotate(-4deg)}}
+.swatches{position:absolute;left:clamp(.6rem,2.5vw,2rem);top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:.7rem;z-index:5}
+.sw{width:34px;height:34px;border-radius:50%;border:3px solid var(--bg);box-shadow:0 0 0 2px var(--fg);cursor:pointer;padding:0;transition:transform .25s}
+.sw:hover{transform:scale(1.15)}
+.sw[aria-pressed=true]{box-shadow:0 0 0 2px var(--fg),0 0 0 7px var(--bg),0 0 0 9px var(--fg)}
+.stage{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;perspective:900px;min-height:0;padding-top:1rem}
+.shirt{height:min(50vh,74vw);aspect-ratio:400/420;transform-style:preserve-3d;will-change:transform}
+.shirt svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 18px 18px rgba(0,0,0,.18))}
+.body{fill:var(--shirt);transition:fill .6s}
+.pr{fill:none;stroke:var(--ink);stroke-width:5;transition:stroke .6s}
+.pf{fill:var(--ink);transition:fill .6s}
+.pt{fill:var(--ink);font:700 17px 'Bricolage Grotesque',system-ui,sans-serif;text-anchor:middle;transition:fill .6s}
+.shadow{width:min(46vh,62vw);height:26px;margin-top:-4px;background:radial-gradient(closest-side,rgba(0,0,0,.3),transparent)}
+.tone{position:relative;z-index:3;margin-top:.4rem;font-weight:600;font-size:.95rem;text-align:center}
+.badge{position:absolute;z-index:4;right:clamp(.8rem,5vw,4rem);top:15%;width:clamp(84px,12vw,132px);animation:spin 22s linear infinite}
+.badge text{font:700 15px 'Bricolage Grotesque',system-ui,sans-serif;fill:var(--fg);letter-spacing:.14em}
+@keyframes spin{to{transform:rotate(360deg)}}
+.word{position:relative;z-index:1;margin-top:-.33em;font-size:clamp(2.7rem,14.2vw,13.5rem);line-height:.9;text-align:center;font-weight:800;letter-spacing:-.045em;white-space:nowrap;user-select:none}
+.word span{display:inline-block;font-variation-settings:'wght' 380,'wdth' 100;animation:wave .9s cubic-bezier(.3,0,.2,1) both;animation-delay:calc(var(--i)*70ms)}
+@keyframes wave{0%{font-variation-settings:'wght' 200,'wdth' 75;transform:translateY(40%)}55%{font-variation-settings:'wght' 800,'wdth' 100}100%{font-variation-settings:'wght' 380,'wdth' 100;transform:none}}
+.foot{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:flex-end;gap:1.2rem 2rem;flex-wrap:wrap;margin-top:1.4rem}
+.foot p{max-width:34ch;font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.35;font-weight:500}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{border:2px solid var(--fg);border-radius:99px;padding:.8rem 1.5rem;font-weight:700;font-size:1.05rem;cursor:pointer;text-decoration:none;background:none;transition:background-color .2s,color .2s}
+.btn.main{background:var(--fg);color:var(--bg)}
+.btn:hover{background:var(--fg);color:var(--bg)}
+.btn.main:hover{background:none;color:var(--fg)}
+@media (max-width:560px){.badge{top:22%}.foot{flex-direction:column;align-items:stretch}.btn{flex:1;text-align:center}}
+@media (prefers-reduced-motion:reduce){.badge,.word span,.bump{animation:none}}
+
+.gal{background:#0E1240;color:#F4F1FF;padding:clamp(3rem,8vw,6.5rem) clamp(1rem,4vw,3rem) calc(clamp(3rem,8vw,6rem) + env(safe-area-inset-bottom,0px))}
+.gal :focus-visible{outline-color:#F4F1FF}
+.gal h2{font-size:clamp(2.3rem,6.5vw,5.2rem);line-height:.95;letter-spacing:-.04em;font-weight:800;max-width:12ch}
+.gal .sub{margin-top:1rem;font-size:1.15rem;font-weight:500;max-width:34ch;opacity:.85}
+.grid{display:grid;grid-template-columns:1fr;gap:2.6rem 1.5rem;margin-top:clamp(2rem,5vw,4rem)}
+@media(min-width:560px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}.item:nth-child(3n+2){margin-top:3.2rem}}
+.tile{aspect-ratio:4/5;border-radius:26px;display:grid;place-items:center;overflow:hidden;background:var(--t)}
+.tile svg{width:80%;transform:rotate(var(--r));filter:drop-shadow(0 14px 14px rgba(0,0,0,.25));transition:transform .45s cubic-bezier(.3,1.4,.5,1)}
+.item:hover .tile svg,.item:focus-within .tile svg{transform:rotate(0) scale(1.06)}
+.cap{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-top:1rem}
+.cap h3{font-size:1.5rem;font-weight:700;letter-spacing:-.02em}
+.cap p{margin-top:.15rem;max-width:24ch;opacity:.8}
+.add{flex:none;border:2px solid currentColor;background:none;color:inherit;border-radius:99px;padding:.5rem 1rem;font-weight:700;cursor:pointer;transition:background-color .2s,color .2s}
+.add:hover{background:#F4F1FF;color:#0E1240}
+
+.tile{position:relative}
+.left{position:absolute;top:.9rem;left:.9rem;z-index:1;background:#0E1240;color:#F4F1FF;border-radius:99px;padding:.3rem .8rem;font-weight:700;font-size:.9rem}
+.add:disabled{opacity:.4;cursor:not-allowed}
+.add:disabled:hover{background:none;color:inherit}
+.faq{background:var(--bg);color:var(--fg);display:grid;gap:2rem 4rem;padding:clamp(3rem,8vw,6.5rem) clamp(1rem,4vw,3rem)}
+@media(min-width:900px){.faq{grid-template-columns:1fr 1.5fr;align-items:start}}
+.faq h2{font-size:clamp(2.3rem,6.5vw,5.2rem);line-height:.95;letter-spacing:-.04em;font-weight:800;max-width:10ch}
+.faq details{border-top:2px solid var(--fg)}
+.faq details:last-child{border-bottom:2px solid var(--fg)}
+.faq summary{display:flex;justify-content:space-between;gap:1rem;padding:1.2rem 0;font-size:1.25rem;font-weight:700;cursor:pointer;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font-size:1.7rem;line-height:1;transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 1.3rem;max-width:50ch;font-size:1.1rem;line-height:1.45}
+footer.site{background:var(--fg);color:var(--bg);padding:clamp(2.5rem,6vw,4.5rem) clamp(1rem,4vw,3rem) calc(1.6rem + env(safe-area-inset-bottom,0px))}
+footer.site :focus-visible{outline-color:var(--bg)}
+footer.site .big{font-size:clamp(2.7rem,14.2vw,13.5rem);line-height:.9;font-weight:800;letter-spacing:-.045em;white-space:nowrap}
+footer.site .cols{display:flex;justify-content:space-between;gap:1.5rem 3rem;flex-wrap:wrap;margin-top:2rem;font-size:1.15rem;font-weight:500}
+footer.site .cols p{max-width:34ch}
+footer.site ul{list-style:none;padding:0;display:grid;gap:.5rem;font-weight:700}
+footer.site a{text-underline-offset:4px}
+footer.site small{display:block;margin-top:2.2rem;opacity:.7}
+.bar{display:none;position:fixed;left:.7rem;right:.7rem;bottom:calc(.7rem + env(safe-area-inset-bottom,0px));z-index:20;align-items:center;justify-content:space-between;gap:1rem;padding:.5rem .5rem .5rem 1.2rem;background:#F4F1FF;color:#0E1240;border-radius:99px;box-shadow:0 8px 28px rgba(0,0,0,.28);font-weight:700;transition:transform .3s,visibility .3s}
+.bar a{background:var(--shirt);color:var(--ink);text-decoration:none;border-radius:99px;padding:.7rem 1.5rem;transition:background-color .6s,color .6s}
+.bar.hide{transform:translateY(140%);visibility:hidden}
+@media(max-width:560px){.bar{display:flex}footer.site{padding-bottom:calc(5.5rem + env(safe-area-inset-bottom,0px))}}
+@media(prefers-reduced-motion:reduce){.bar{transition:none}}
+</style>
+</head>
+<body>
+<main class="hero" id="hero">
+  <div class="flood" id="flood"></div>
+  <header class="nav">
+    <a class="mark" href="#">RU</a>
+    <nav><a href="#shop">Shop</a><button class="cart" id="cart" type="button">Cart<b id="count">0</b></button></nav>
+  </header>
+
+  <div class="swatches" id="sws" role="group" aria-label="Choose a colour"></div>
+
+  <svg class="badge" viewBox="0 0 120 120" aria-hidden="true">
+    <defs><path id="ring" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs>
+    <text><textPath href="#ring">official merch  *  cash on delivery  *  </textPath></text>
+    <text x="60" y="66" text-anchor="middle" style="font-size:18px;letter-spacing:0">LK</text>
+  </svg>
+
+  <div class="stage">
+    <div class="shirt" id="shirt">
+      <svg viewBox="0 0 400 420" role="img" aria-label="T-shirt with a play button print">
+        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".2"/><stop offset=".35" stop-color="#fff" stop-opacity=".14"/><stop offset=".7" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".24"/></linearGradient></defs>
+        <path class="body" id="tee" d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/>
+        <path fill="url(#g)" d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/>
+        <path d="M130 24 96 126M270 24l34 102" stroke="#000" stroke-opacity=".18" stroke-width="2" fill="none"/>
+        <path d="M130 24q70 52 140 0" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="9" stroke-linecap="round"/>
+        <g transform="translate(200 205)"><circle class="pr" r="58"/><path class="pf" d="M-17-28 32 0-17 28Z"/><text class="pt" y="96">@RanukaTheCreator</text></g>
+      </svg>
+    </div>
+    <div class="shadow"></div>
+  </div>
+  <p class="tone" id="tone" aria-live="polite">Ratnapura Blue</p>
+
+  <h1 class="word" id="word" aria-label="RanukaUdesh"></h1>
+
+  <div class="foot">
+    <p>Official tees from the channel. Pick a colour, pay when it arrives.</p>
+    <div class="cta"><a class="btn main" href="#shop">Buy now</a><button class="btn" id="add" type="button">Add to cart</button></div>
+  </div>
+</main>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="tee" viewBox="0 0 400 420"><path d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/><path fill="url(#g)" d="M130 24 60 54 10 134l56 30 30-38v276h208V126l30 38 56-30-50-80-70-30q-70 52-140 0Z"/><path d="M130 24 96 126M270 24l34 102" stroke="#000" stroke-opacity=".18" stroke-width="2" fill="none"/><path d="M130 24q70 52 140 0" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="9" stroke-linecap="round"/></symbol></defs></svg>
+<section class="gal" id="shop" aria-labelledby="gt">
+  <h2 id="gt">Available designs</h2>
+  <p class="sub">Six tees from the channel. Add the ones you want to your cart.</p>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="faq" aria-labelledby="fq">
+  <h2 id="fq">Common questions</h2>
+  <div>
+    <details><summary>How do I pay?</summary><p>Cash on delivery, or bank transfer. We don't take card payments.</p></details>
+    <details><summary>How do I place an order?</summary><p>Add your designs to the cart, or message us on WhatsApp and order directly.</p></details>
+    <details><summary>Which sizes are available?</summary><p>Message us on WhatsApp and we'll confirm sizes before you order.</p></details>
+    <details><summary>How long does delivery take, and what does it cost?</summary><p>It depends on where you live. Message us on WhatsApp with your town and we'll tell you before you order.</p></details>
+    <details><summary>What if the tee doesn't fit or arrives wrong?</summary><p>Message us on WhatsApp as soon as it arrives and we'll help you sort it out.</p></details>
+  </div>
+</section>
+
+<footer class="site">
+  <p class="big" aria-hidden="true">RanukaUdesh</p>
+  <div class="cols">
+    <p>Official merch from @RanukaTheCreator. Pay cash on delivery or by bank transfer.</p>
+    <ul>
+      <li><a href="https://wa.me/94765647737" target="_blank" rel="noopener">WhatsApp +94 76 564 7737</a></li>
+      <li><a href="https://www.youtube.com/@RanukaTheCreator" target="_blank" rel="noopener">YouTube @RanukaTheCreator</a></li>
+    </ul>
+  </div>
+  <small>© 2026 RanukaUdesh</small>
+</footer>
+
+<div class="bar hide" id="bar"><span>Cart <b id="bc">0</b></span><a href="#shop">Buy now</a></div>
+
+
+<script>
+const C=[
+ {n:'Ratnapura Blue',bg:'#C9D4FF',fg:'#10153F',s:'#1E34B8',i:'#FFFFFF'},
+ {n:'Tea Estate',bg:'#CFE8D5',fg:'#0F2A1E',s:'#2F6B4F',i:'#F4FFF6'},
+ {n:'Turmeric',bg:'#231B5A',fg:'#FFF3D1',s:'#F2B705',i:'#231B5A'},
+ {n:'Lotus',bg:'#FFD6E1',fg:'#4A0F26',s:'#E8497A',i:'#FFFFFF'}
+];
+const R=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const root=document.documentElement,hero=document.getElementById('hero'),flood=document.getElementById('flood'),
+ sws=document.getElementById('sws'),tone=document.getElementById('tone'),shirt=document.getElementById('shirt'),word=document.getElementById('word');
+let cur=0;
+
+C.forEach((c,k)=>{
+  const b=document.createElement('button');
+  b.className='sw';b.type='button';b.style.background=c.s;b.setAttribute('aria-label',c.n);b.setAttribute('aria-pressed',k===0);
+  b.onclick=e=>pick(k,e);
+  sws.appendChild(b);
+});
+
+function pick(k,e){
+  if(k===cur)return;
+  const c=C[k],r=hero.getBoundingClientRect(),b=e.currentTarget.getBoundingClientRect();
+  const x=b.left+b.width/2-r.left,y=b.top+b.height/2-r.top;
+  cur=k;
+  [...sws.children].forEach((s,j)=>s.setAttribute('aria-pressed',j===k));
+  tone.textContent=c.n;
+  root.style.setProperty('--shirt',c.s);root.style.setProperty('--ink',c.i);
+  if(R){setTheme(c);return}
+  const rad=Math.hypot(Math.max(x,r.width-x),Math.max(y,r.height-y));
+  flood.style.cssText='display:block;background:'+c.bg;
+  flood.animate({clipPath:[`circle(0px at ${x}px ${y}px)`,`circle(${rad}px at ${x}px ${y}px)`]},{duration:850,easing:'cubic-bezier(.7,0,.2,1)'})
+   .onfinish=()=>{setTheme(c);flood.style.display='none'};
+  setTimeout(()=>root.style.setProperty('--fg',c.fg),380);
+}
+function setTheme(c){root.style.setProperty('--bg',c.bg);root.style.setProperty('--fg',c.fg)}
+
+/* headline: one letter per span, weight swells near the pointer */
+[...'RanukaUdesh'].forEach((ch,i)=>{const s=document.createElement('span');s.textContent=ch;s.style.setProperty('--i',i);s.setAttribute('aria-hidden','true');word.appendChild(s)});
+const L=[...word.children];let centers=[];
+function measure(){centers=L.map(s=>{const b=s.getBoundingClientRect();return[b.left+b.width/2,b.top+b.height/2+scrollY]})}
+addEventListener('load',()=>setTimeout(measure,1200));addEventListener('resize',measure);
+
+let mx=0,my=0,tx=0,ty=0,rx=0,ry=0,raf=0,active=false;
+addEventListener('pointermove',e=>{
+  if(R)return;
+  mx=e.clientX;my=e.clientY+scrollY;tx=e.clientX/innerWidth-.5;ty=e.clientY/innerHeight-.5;active=true;
+  if(!raf)raf=requestAnimationFrame(tick);
+});
+function tick(){
+  rx+=(-ty*14-rx)*.09;ry+=(tx*22-ry)*.09;
+  shirt.style.transform=`rotateX(${rx.toFixed(2)}deg) rotateY(${ry.toFixed(2)}deg)`;
+  if(active&&centers.length){
+    L.forEach((s,i)=>{
+      const dx=centers[i][0]-mx,dy=centers[i][1]-my,d2=dx*dx+dy*dy;
+      const t=Math.exp(-d2/(2*190*190));
+      s.style.fontVariationSettings=`'wght' ${Math.round(380+420*t)},'wdth' ${Math.round(100-18*t)}`;
+    });
+  }
+  const moving=Math.abs(-ty*14-rx)>.05||Math.abs(tx*22-ry)>.05;
+  raf=moving?requestAnimationFrame(tick):0;
+}
+
+/* cart */
+const cnt=document.getElementById('count'),cartBtn=document.getElementById('cart');let n=0;
+const bc=document.getElementById('bc');
+function addToCart(){cnt.textContent=bc.textContent=++n;cartBtn.classList.remove('bump');void cartBtn.offsetWidth;cartBtn.classList.add('bump')}
+document.getElementById('add').onclick=addToCart;
+
+/* designs */
+const petals=[-56,-28,0,28,56].map(a=>`<ellipse cy="-40" rx="15" ry="42" transform="rotate(${a})"/>`).join('');
+const leaf='<path d="M0 0C-34-26-34-78 0-104 34-78 34-26 0 0Z" transform="rotate(ANG)"/>';
+const D=[
+{n:'Play',d:'The channel mark, front and centre.',t:'#AFC0FF',s:'#1E34B8',p:'#FFFFFF',g:'<circle r="52" fill="none" stroke-width="6" style="stroke:var(--p)"/><path d="M-16-26 30 0-16 26Z"/>'},
+{n:'Tea Leaf',d:'Three leaves from the hill country.',t:'#BFE0C8',s:'#2F6B4F',p:'#F4FFF6',g:'<g transform="translate(0 45)">'+[-38,0,38].map(a=>leaf.replace('ANG',a)).join('')+'</g>'},
+{n:'Lotus Bloom',d:'Five petals, one colour.',t:'#FFC2D3',s:'#E8497A',p:'#FFFFFF',g:'<g transform="translate(0 42)">'+petals+'</g>'},
+{n:'Sigiriya',d:'The sun over the rock.',t:'#E4DFFF',s:'#F2B705',p:'#231B5A',g:'<circle cy="-28" r="26"/><path d="M-72 52-48 16Q-42 4-24 4H28Q46 4 52 16L76 52Z"/>'},
+{n:'Bell',d:'For everyone who turned on notifications.',t:'#2F6B4F',s:'#F3F4FA',p:'#2F6B4F',g:'<path d="M0-54c-26 0-38 20-38 44v22l-10 14h96l-10-14v-22c0-24-12-44-38-44Z"/><circle cy="40" r="9"/>'},
+{n:'Wave',d:'South coast, all year round.',t:'#F2B705',s:'#10153F',p:'#FFF3D1',g:'<g fill="none" stroke-width="8" stroke-linecap="round" style="stroke:var(--p)">'+[-26,0,26].map(y=>`<path transform="translate(0 ${y})" d="M-64 0q16-22 32 0t32 0 32 0 32 0"/>`).join('')+'</g>'}
+];
+const tilt=[-4,3,-2,4,-3,2];
+const grid=document.getElementById('grid');
+grid.innerHTML=D.map((x,i)=>`<article class="item"><div class="tile" style="--t:${x.t}">${x.left!=null?`<span class="left">${x.left>0?x.left+' left':'Sold out'}</span>`:''}<svg viewBox="0 0 400 420" style="--s:${x.s};--p:${x.p};--r:${tilt[i]}deg" role="img" aria-label="${x.n} design on a tee"><use href="#tee" style="fill:var(--s)"/><g transform="translate(200 205)" style="fill:var(--p)">${x.g}</g></svg></div><div class="cap"><div><h3>${x.n}</h3><p>${x.d}</p></div><button class="add" type="button" aria-label="Add ${x.n} to cart" ${x.left===0?'disabled':''}>Add to cart</button></div></article>`).join('');
+grid.addEventListener('click',e=>{
+  const b=e.target.closest('.add');if(!b)return;
+  addToCart();b.textContent='Added';setTimeout(()=>b.textContent='Add to cart',1200);
+});
+
+/* sticky buy bar: hidden while the hero buttons or the designs are on screen */
+const bar=document.getElementById('bar'),seen=new Set();
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?seen.add(e.target):seen.delete(e.target));bar.classList.toggle('hide',seen.size>0)},{threshold:.15});
+[document.querySelector('.hero .foot'),document.getElementById('shop')].forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
